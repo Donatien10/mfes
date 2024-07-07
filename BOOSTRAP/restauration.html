@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSS/restauration.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>RESTAURATION</th>
+                <th>ADRESSE</th>
+                <th>CONTACTS</th>
+                <th>E-MAIL</th>
+                <th>RESPONSABLE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Générer les lignes avec JavaScript pour simplifier le HTML -->
+            <script>
+                for (let i = 1; i <= 110; i++) {
+                    document.write('<tr>');
+                    for (let j = 1; j <= 5; j++) {
+                        document.write('<td><input type="text" name="row' + i + '_col' + j + '"></td>');
+                    }
+                    document.write('</tr>');
+                }
+            </script>
+        </tbody>
+    </table>
+
+    <script src="./../mfes.js"></script>
+</body>
+</html>
